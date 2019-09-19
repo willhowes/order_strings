@@ -12,4 +12,8 @@ describe '#order_words' do
   it 'returns correctly ordered string for more than two words' do
     expect(order_words('a3 b2 c1')).to eq('c1 b2 a3')
   end
+
+  it 'returns correctly ordered string where there is four words' do
+    expect(order_words('is2 Thi1s T4est 3a')).to eq('Thi1s is2 3a T4est')
+  end
 end
